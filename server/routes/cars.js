@@ -3,7 +3,7 @@
 '   Filename: server.routes.cars.js                             '
 '   Created by: Emander D. Dangla                               '
 '   Student ID: 301245113                                       '
-'   Web App name: https://COMP229-F2022-301245113.herokuapp.com '
+'   Web App: https://comp229-f22-midterm-301245113.herokuapp.com'
 '   Date Created: 25/10/2022                                    '
 '   Description: cars routes file for Midterm Partical Test     '
 '                                                               '
