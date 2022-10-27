@@ -1,0 +1,86 @@
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the add a car page -->
+<div class="container p-5">
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+      <h1 class="text-center">Add a Car</h1>
+
+      <form class="form" method="post">
+        <!-- Car Name Field -->
+        <div class="form-group row py-3">
+          <label for="nameTextField" class="col-sm-3 py-2">Car Name:</label>
+          <div class="col-sm-9">
+            <input
+              type="text"
+              class="form-control"
+              id="nameTextField"
+              placeholder="Car Name"
+              name="Carname"
+              required
+            />
+          </div>
+        </div>
+        <!-- Car Category Field -->
+        <div class="form-group row py-3">
+          <label for="categoryTextField" class="col-sm-3 py-2">Category:</label>
+          <div class="col-sm-9">
+            <input
+              type="text"
+              class="form-control"
+              id="categoryTextField"
+              placeholder="Category"
+              name="Category"
+              required
+            />
+          </div>
+        </div>
+        <!-- Car Model Field -->
+        <div class="form-group row py-3">
+          <label for="modelTextField" class="col-sm-3 py-2">Car Model:</label>
+          <div class="col-sm-9">
+            <input
+              type="text"
+              class="form-control"
+              id="modelTextField"
+              placeholder="Car Model"
+              name="Carmodel"
+              required
+            />
+          </div>
+        </div>
+        <!-- Car Price Field -->
+        <div class="form-group row py-3">
+          <label for="priceNumberField" class="col-sm-3 py-2">Price:</label>
+          <div class="col-sm-9">
+            <input
+              type="number"
+              class="form-control"
+              id="priceNumberField"
+              placeholder="Price"
+              name="Price"
+              required
+            />
+          </div>
+        </div> 
+        
+        <div class="form-group row pt-3 justify-content-center">
+          <!-- Submit Button -->
+          <div class="col-sm-3">
+            <button class="btn btn-primary form-control" type="submit">
+              <i class="fas fa-edit"></i> Submit
+            </button>
+          </div>
+          <!-- Cancel Button -->
+          <div class="col-sm-3">
+            <a href="/cars" class="btn btn-danger form-control">
+              <i class="fas fa-undo"></i> Cancel
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>

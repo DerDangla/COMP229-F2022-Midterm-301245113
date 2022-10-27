@@ -1,0 +1,62 @@
+/*
+'---------------------------------------------------------------'
+'   Filename: content.app.css                                   '
+'   Created by: Emander D. Dangla                               '
+'   Student ID: 301245113                                       '
+'   Web App name: https://COMP229-F2022-301245113.herokuapp.com '
+'   Date Created: 25/10/2022                                    '
+'   Description: customized css file for Midterm Partical Test  '
+'                                                               '
+'---------------------------------------------------------------'
+'   Modification History                                        '
+'---------------------------------------------------------------'
+'   Date            Developer           Modification            '
+'   25/10/2022      Emander Dangla      Initial Creation        '
+'---------------------------------------------------------------'*/
+
+h1 {
+  font-size: 60px;
+  font-family: 'Comfortaa';
+}
+table, h5, p, h3, h4, h2, .font-comfortaa {
+  font-family: 'Comfortaa';
+}
+.container-sm {
+  text-align: center;
+}
+p{
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.center {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+  padding: 10px;
+}
+a {
+  text-decoration:none;
+}
+@media (min-width: 1200px) {
+  .container.projects{
+      max-width: 970px;
+  }
+}
+.navbar {
+  --bs-navbar-hover-color: rgb(255, 102, 0);
+  --bs-navbar-active-color: rgb(255, 102, 0);
+}
+.nav-linka{
+  padding: 0.5rem;
+}
+label{
+  font-family: 'Comfortaa';
+  font-size: 18px;
+}
+td, div{
+  word-break:break-all;
+}
+h4{
+  padding-top: 1.5rem;
+}

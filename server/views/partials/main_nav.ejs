@@ -1,0 +1,41 @@
+<!-- Main Navigation -->
+<div class="d-flex justify-content-center bg-dark text-white p-2">
+  Welcome to Emander's Midterm Practical Test for COMP229 of Fall 2022<i class="fa-solid"></i>
+</div>
+
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container-fluid px-5">
+    <a class="navbar-brand px-5" href="/"><i class="fa fa-car fa-lg"></i> My Favourite Cars</a>
+      
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <!-- Home Navigation Item -->
+        <li class="nav-item p-4 flex-fill" >
+          <% if(title == "Home") { %> 
+            <a class="nav-link active" aria-current="page" href="/">
+          <% } else { %> 
+            <a class="nav-link" aria-current="page" href="/">
+          <% } %> 
+            <i class="fa-solid fa-house-user"></i>
+            Home
+          </a>
+        </li>
+        <!-- Car List Navigation Item -->
+        <li class="nav-item p-4 flex-fill">
+          <% if(title == "Cars") { %> 
+            <a class="nav-link active" aria-current="page" href="/cars">
+          <% } else { %> 
+            <a class="nav-link" aria-current="page" href="/cars">
+          <% } %> 
+            <i class="fa fa-car fa-lg"></i>
+            Car List
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

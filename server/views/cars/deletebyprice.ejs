@@ -1,0 +1,56 @@
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the delete by price page -->
+<div class="container p-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="text-center"><%= title %></h1>
+
+      <form class="form" method="post">
+        <!-- Price Range Fields -->
+        <div class="form-group row py-3">
+          <label for="priceNumberField" class="col-sm-3 py-2">Price Range:</label>
+          <!-- Minimum Price Field -->
+          <div class="col-sm-4">
+            <input
+              type="number"
+              class="form-control"
+              id="priceNumberField"
+              placeholder="min"
+              name="Min"
+              required
+            />
+          </div>
+          <!-- Maximum Price Field -->
+          <div class="col-sm-4">
+            <input
+              type="number"
+              class="form-control"
+              id="priceNumberField"
+              placeholder="max"
+              name="Max"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row pt-3 justify-content-center">
+          <!-- Submit Button -->
+          <div class="col-sm-3">
+            <button class="btn btn-primary form-control" type="submit">
+              <i class="fas fa-edit"></i>Submit
+            </button>
+          </div>
+          <!-- Cancel Button -->
+          <div class="col-sm-3">
+            <a href="/cars/delete" class="btn btn-danger form-control">
+              <i class="fas fa-undo"></i>Cancel
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>
