@@ -119,15 +119,7 @@ $.fn.pageMe = function(opts){
     }
 };
 
-// IIFE
 (function(){
-  $(".btn-danger").click(function(event){
-    if(!confirm("Are you sure?")) {
-      event.preventDefault();
-      window.location.assign("/games");
-    }
-  });
-
  /* pagination code */
   $('#myTable').pageMe(
     {pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:6}
